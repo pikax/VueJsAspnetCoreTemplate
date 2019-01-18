@@ -1,32 +1,32 @@
-#VueJsAspnetCore
+# VueJsAspnetCore
 
 Template to integrate [VueJs](https://github.com/vuejs/vue) on [Visual Studio](https://visualstudio.microsoft.com/) aspnetcore project.
 
 Publish `.csproj` using `vuejs` as SPA 
 
 
-#How to use
+# How to use
 
-##Requirements
+## Requirements
 Needs yarn, but you can adapt easily to use npm instead, just need to edit `.csproj`
 
-##Development
+## Development
 For development I recommend using 
 `yarn serve`
 or 
 `npm run serve`
 
-##Publish
+## Publish
 `dotnet publish`
 or 
 using Visual Studio
 
 
-#From the scratch
+# From the scratch
 
 Create an empty aspnetcore project +2.0
 
-##Update *.csproj*
+## Update *.csproj*
 
 Add 
 
@@ -49,7 +49,7 @@ Add
   </Target>
 ```
 
-###if using npm 
+### if using npm 
 use 
 ```xml
 
@@ -71,10 +71,10 @@ use
 ```
 
 
-##update `Startup.cs`
+## update `Startup.cs`
 
 
-###AddSpaStaticFiles
+### AddSpaStaticFiles
 Add in ConfigureServices
 ```csharp
 
@@ -96,7 +96,7 @@ public void ConfigureServices(IServiceCollection services)
 ```
 
 
-###Configure
+### Configure
 Add in Configure
 ```csharp
 app.UseSpaStaticFiles(new StaticFileOptions()
