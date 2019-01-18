@@ -1,0 +1,13 @@
+# VueJsAspnetCore
+
+Template to integrate [VueJs](https://github.com/vuejs/vue) on [Visual Studio](https://visualstudio.microsoft.com/) aspnetcore project.
+
+Publish `.csproj` using `vuejs` as SPA 
+
+For development I recommend using 
+`yarn serve`
+or 
+`npm run serve`
+
+
+publish with dotnet using Visual Studio or `dotnet publish`
